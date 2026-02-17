@@ -64,7 +64,7 @@ void	Bureaucrat::increment()
 
 std::ostream&	operator<<(std::ostream& outputStream, const Bureaucrat& bureaucrat)
 {
-	outputStream << bureaucrat.getGrade() << ", bureaucrat grade " << bureaucrat.getGrade();
+	outputStream << bureaucrat.getName() << ", bureaucrat grade " << bureaucrat.getGrade();
 	return (outputStream);
 }
 

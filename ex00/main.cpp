@@ -89,5 +89,11 @@ int main()
 
 	std::cout << "\n---Test invalid increment from 150---" << std::endl;
 	decrementHelper("john", 150);
+
+	// insertion overload
+	std::cout << "\n---Test insertion overload---" << std::endl;
+	Bureaucrat	b("jeff", 100);
+	std::cout << b << std::endl;
+
 	return 0;
 }
