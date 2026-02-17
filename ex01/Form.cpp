@@ -12,7 +12,7 @@ Form::Form(std::string name, int requiredSignGrade, int requiredExecuteGrade)
 	if (requiredSignGrade > 150 || requiredExecuteGrade > 150)
 		throw GradeTooLowException();
 	
-	std::cout << "Form constructor called. Name: " << name << ", requiredSignGrade: " << requiredSignGrade << "requiredExecuteGrade: " << requiredExecuteGrade << std::endl;
+	std::cout << "Form constructor called. Name: " << name << ", requiredSignGrade: " << requiredSignGrade << ", requiredExecuteGrade: " << requiredExecuteGrade << std::endl;
 }
 
 Form::Form(const Form &other)
@@ -81,7 +81,7 @@ std::ostream&	operator<<(std::ostream& outputStream, const Form& Form)
 	outputStream << Form.getName()
 	<< ", requiredSignGrade: " << Form.getRequiredSignGrade()
 	<< ", requiredExecuteGrade: " << Form.getRequiredExecuteGrade()
-	<< ", isSigned: " << (Form.getIsSigned() ? "true" : "false") << ")";
+	<< ", isSigned: " << (Form.getIsSigned() ? "true" : "false");
 	return (outputStream);
 }
 

@@ -4,6 +4,8 @@
 #include <string>
 #include "Bureaucrat.hpp"
 
+class Bureaucrat;
+
 class Form
 {
 	public:
@@ -36,9 +38,9 @@ class Form
 		Form();
 
 		const std::string	name;
-		bool				isSigned;
 		const int			requiredSignGrade;
 		const int			requiredExecuteGrade;
+		bool				isSigned;
 };
 
 std::ostream&	operator<<(std::ostream& outputStream, const Form& form);
