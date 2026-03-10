@@ -38,6 +38,8 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 
 void ShrubberyCreationForm::executeFormAction() const
 {
+	std::cout << "Writing ascii trees to file\n";
+
 	std::ofstream outfile(this->target + "_shrubbery");
 	outfile << tree1 << tree2;
 }
