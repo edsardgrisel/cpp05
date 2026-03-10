@@ -1,5 +1,6 @@
 #include "ShrubberyCreationForm.hpp"
 #include <iostream>
+#include <fstream>
 
 ShrubberyCreationForm::ShrubberyCreationForm()
 	: AForm("ShrubberyCreationForm", 145, 137), target("")
@@ -37,5 +38,6 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 
 void ShrubberyCreationForm::executeFormAction() const
 {
-	
+	std::ofstream outfile(this->target + "_shrubbery");
+	outfile << tree1 << tree2;
 }
