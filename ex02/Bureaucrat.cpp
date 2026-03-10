@@ -1,4 +1,4 @@
-#include "Bureaucrat.hpp"
+#include "inc/Bureaucrat.hpp"
 #include <iostream>
 
 
@@ -62,7 +62,7 @@ void	Bureaucrat::increment()
 		grade--;
 }
 
-void	Bureaucrat::signForm(Form& form)
+void	Bureaucrat::signForm(AForm& form)
 {
 	if (form.getIsSigned())
 	{
