@@ -43,7 +43,7 @@ int main()
 
 
 	std::cout << "\n\nIntern create Presidential. Invalid sign. Invalid exec" << std::endl;
-	AForm* presiForm = intern.makeForm("presidential pardon", "robo target");
+	AForm* presiForm = intern.makeForm("presidential pardon", "presidential target");
 	min.signForm(*presiForm);
 	min.executeForm(*presiForm);
 	

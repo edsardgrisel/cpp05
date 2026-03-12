@@ -22,7 +22,7 @@ PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm& oth
 PresidentialPardonForm& PresidentialPardonForm::operator=(const PresidentialPardonForm& other)
 {
 	if (this != &other)
-	{"high",  137
+	{
 		AForm::operator=(other);
 		this->target = other.target;
 	}
